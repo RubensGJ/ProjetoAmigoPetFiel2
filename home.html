@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Amigo Fiel</title>
+    <link rel="stylesheet" href="/styles/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">Pet Amigo Fiel</div>
+        <nav>
+            <ul>
+                <li><a href="#encontrar">Encontrar Cuidador</a></li>
+                <li><a href="#como-funciona">Como Funciona</a></li>
+                <li><a href="#quero-ser-heroi">Quero ser Cuidador</a></li>
+                <li><a href="#ajuda">Ajuda</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="index.html" class="btn acessar-perfil"> Acessar Perfil</a>
+        </div>
+    </header>
+
+    <section class="main-content">
+        <aside class="filters">
+            <h3>Filtros</h3>
+            <div class="filter-item">
+                <h4>Tipo de Serviço</h4>
+                <select>
+                    <option>Selecione o tipo de serviço</option>
+                    <option>Hospedagem</option>
+                    <option>Cuidados</option>
+                    <!-- mais opções -->
+                </select>
+            </div>
+            <div class="filter-item">
+                <h4>Localização</h4>
+                <input type="text" placeholder="Digite seu endereço" aria-label="Endereço">
+            </div>
+            <div class="filter-item">
+                <h4>Datas</h4>
+                <input type="date" placeholder="Entrada" aria-label="Data de Entrada">
+                <input type="date" placeholder="Saída" aria-label="Data de Saída">
+            </div>
+            <div class="filter-item">
+                <h4>Tamanho do pet</h4>
+                <button>Até 5kg</button>
+                <button>5 a 10kg</button>
+                <button>10 a 20kg</button>
+                <button>20 a 40kg</button>
+                <button>+ de 40kg</button>
+            </div>
+            <div class="filter-item">
+                <h4>Faixa de preço</h4>
+                <input type="range" min="20" max="200">
+            </div>
+            <div class="filter-item">
+                <h4>Características do pet</h4>
+                <label>
+                    <input type="radio" name="sexo" value="macho"> Macho
+                </label>
+                <label>
+                    <input type="radio" name="sexo" value="femea"> Fêmea
+                </label>
+                <label>
+                    <input type="checkbox" name="castrado"> Castrado
+                </label>
+            </div>
+            <button class="btn limpar">Limpar Filtros</button>
+        </aside>
+
+        <main class="results">
+            <h2>Resultados da Busca</h2>
+            <div class="cuidador">
+                <img src="/img/rubens.png" alt="Nome do Cuidador" class="foto">
+                <div class="info">
+                    <h3>Rubens Gallina</h3>
+                    <p>1.0 km - Tijuca</p>
+                    <p>5.0 (5000)</p>
+                    <p>R$ 5600 p/ dia</p>
+                    <button class="btn detalhes">Ver Detalhes</button>
+                </div>
+            </div>
+            <!-- Repita o bloco acima para outros cuidadores -->
+        </main>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Pet Amigo Fiel. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

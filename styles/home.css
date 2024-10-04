@@ -1,0 +1,114 @@
+body {
+    font-family: "Titan One", sans-serif;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #FFD165;
+    color: #5b5022;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh;
+    background-color: #FF8346;
+    font-family:"Titan One", sans-serif; 
+    border-radius: 0px 0px 35px 35px;
+    color: white;
+}
+
+.auth-buttons .btn {
+    margin-left: 10px;
+    padding: 10px 15px;
+}
+
+.auth-buttons .btn.acessar-perfil {
+    background-color: #FFD165; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+.auth-buttons .btn.acessar-perfil:hover {
+    background-color: #d62839; 
+}
+
+header .logo {
+    font-size: 2rem; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.auth-buttons .btn {
+    margin-left: 10px;
+}
+
+.auth-buttons .btn.destaque {
+    background-color: #e63946;
+    color: #fff;
+}
+
+.search-area {
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.search-area form {
+    display: flex;
+    gap: 10px;
+}
+
+.main-content {
+    display: flex; 
+    margin: 20px; 
+}
+
+.filters {
+    flex: 1; 
+    padding: 20px;
+    background-color: #ffffff;
+    margin-right: 20px; 
+    border-radius: 8px;
+}
+
+.results {
+    flex: 3; 
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.cuidador {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cuidador .foto {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ffffff;
+}

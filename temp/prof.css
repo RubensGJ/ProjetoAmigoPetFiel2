@@ -1,0 +1,21 @@
+p{
+    margin:540px 200px 200px 400px;
+    font: 6em sans-serif;
+    background:-webkit-linear-gradient(55deg,yellow,red,blue);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    text-transform:uppercase;
+    opacity:.85;
+    transform:rotateX(55deg)rotateY(33deg)scale(1.4,2.5);
+  }
+  
+  body{background:linear-gradient(66deg,blue,#000,#000,#000,purple);
+  background-attachment:fixed;}
+  
+  h1{
+    color:#fff;
+    font:2em century;
+    margin:-400px 0px 200px 80px;
+    animation: bo 4.6s alternate infinite ease-in;
+  }
+  @keyframes bo{100%{transform:translate(0px, 370px)}}

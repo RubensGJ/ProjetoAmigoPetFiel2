@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width-device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="sie-edge" />
+    <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/styles/login.css">
+    <title>Slider Form</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Sou cuidador !<br></h1>
+                <p>Não sei o que colocar Lol</p>
+                
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Senha">
+                <button>Entrar</button>
+            </form>
+        </div>
+
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Sou Tutor.<br></h1>
+                    <p>Bem vindo devolta,<br> Pronto para achar um cuidador pro seu amiguinho?</p>
+    
+                <div class="social-container">
+                </div>
+                <input id="emailInsirido" type="email" placeholder="Email">
+                <input id="senhaInsirida" type="text" placeholder="Senha">
+                <button onclick="loginTutor()">Entrar</button>
+            </form>
+        </div>
+        
+        <div class="overlay-container">
+            <div class="overlay">
+
+                <div class="overlay-panel overlay-left">
+                    <h1>Bem vindo de volta</h1>
+                    <p>Pronto para cuidar de mais pets hoje?</p>
+                    <button class="ghost" id="signIn">Sou tutor</button>
+                </div>
+
+                <div class="overlay-panel overlay-right">
+                    <h1>Olá amigo.</h1>
+                    <p>Não se esqueça de sempre checar o forum para dicas importantes</p>
+                    <button class="ghost" id="signUp">Sou cuidador</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="extra-section">
+
+        <a href="index.html">
+        <button>Menu</button>
+        </a>
+    
+        <a href="register.html">
+        <button>Criar conta</button>
+        </a>
+
+
+    </div>
+    <script src="/js/main.js"></script>
+    <script src="/js/save.js"></script>
+    <script src="/js/scripts.js"></script>
+    <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
+</body>
+
+</html>
