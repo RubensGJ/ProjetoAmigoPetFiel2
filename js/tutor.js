@@ -178,6 +178,77 @@ function exibirDadosUsuario(idNome, idEmail, idImagem) {
     }
 }
 
+function exibirCuidadores() {
+    let registroNomeCuidador = JSON.parse(localStorage.getItem('registroNomeCuidador')) || [];
+    let registroEmailCuidador = JSON.parse(localStorage.getItem('registroEmailCuidador')) || [];
+    let containerCuidadores = document.getElementById("listaCuidadores");
+
+    // Limpa o conteúdo do container antes de exibir os cuidadores
+    containerCuidadores.innerHTML = '';
+
+    // Verificar se existem cuidadores registrados
+    if (registroNomeCuidador.length === 0 || registroEmailCuidador.length === 0) {
+        containerCuidadores.innerHTML = '<p>Nenhum cuidador registrado</p>';
+        return;
+    }
+
+    // Informações genéricas
+    const descricaoGenerica = "Cuidador experiente, oferecendo cuidado de qualidade para seu pet.";
+    const distanciaGenerica = "5 km de distância";
+    const servicosOferecidos = ["PetSitting", "Passeio", "Banho"];
+
+    // Exibe os cuidadores
+    registroEmailCuidador.forEach((email, index) => {
+        let nome = registroNomeCuidador[index];
+        let imagemBase64 = localStorage.getItem(`registroImagemCuidador_${email}`);
+
+        // Criar o HTML para cada cuidador (imagem, nome, descrição, distância e serviços)
+        let cuidadorDiv = document.createElement('div');
+        cuidadorDiv.className = 'cuidador';
+
+        // Adicionar imagem
+        let img = document.createElement('img');
+        img.src = imagemBase64 ? imagemBase64 : 'default-profile-image.png'; // Caso a imagem não exista
+        img.alt = `Imagem de ${nome}`;
+        img.className = 'imagem-cuidador'; // Classe para estilizar a imagem
+
+        // Adicionar nome
+        let nomeCuidador = document.createElement('p');
+        nomeCuidador.textContent = nome;
+        nomeCuidador.className = 'nome-cuidador'; // Classe para estilizar o nome
+
+        // Adicionar descrição genérica
+        let descricaoCuidador = document.createElement('p');
+        descricaoCuidador.textContent = descricaoGenerica;
+        descricaoCuidador.className = 'descricao-cuidador';
+
+        // Adicionar distância genérica
+        let distanciaCuidador = document.createElement('p');
+        distanciaCuidador.textContent = distanciaGenerica;
+        distanciaCuidador.className = 'distancia-cuidador';
+
+        // Adicionar serviços oferecidos
+        let servicosCuidador = document.createElement('p');
+        servicosCuidador.textContent = `Serviços: ${servicosOferecidos.join(', ')}`;
+        servicosCuidador.className = 'servicos-cuidador';
+
+        // Inserir tudo no container do cuidador
+        cuidadorDiv.appendChild(img);
+        cuidadorDiv.appendChild(nomeCuidador);
+        cuidadorDiv.appendChild(descricaoCuidador);
+        cuidadorDiv.appendChild(distanciaCuidador);
+        cuidadorDiv.appendChild(servicosCuidador);
+
+        // Inserir o cuidador na lista
+        containerCuidadores.appendChild(cuidadorDiv);
+    });
+}
+
+// Chamar essa função ao carregar a página de tutores
+window.onload = function() {
+    exibirCuidadores();
+};
+
 
 //Teste
 
