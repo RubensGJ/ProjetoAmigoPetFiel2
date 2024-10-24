@@ -14,18 +14,18 @@
 
     <div class="container" id="container">
         <div class="form-container sign-up-container">
-            <form action="#">
+            <form id="login-form-cuidador" onsubmit="loginCuidador(); return false;">
                 <h1>Sou cuidador !<br></h1>
                 <p>Não sei o que colocar Lol</p>
                 
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Senha">
-                <button>Entrar</button>
+                <input id="emailCuidadorInsirido" type="email" placeholder="Email">
+                <input id="senhaCuidadorInsirida" type="password" placeholder="Senha">
+                <button type="submit">Entrar como Cuidador</button>
             </form>
         </div>
 
         <div class="form-container sign-in-container">
-            <form action="#">
+            <form id="login-form" onsubmit="loginTutor(); return false;">
                 <h1>Sou Tutor.<br></h1>
                     <p>Bem vindo devolta,<br> Pronto para achar um cuidador pro seu amiguinho?</p>
     
@@ -33,7 +33,7 @@
                 </div>
                 <input id="emailInsirido" type="email" placeholder="Email">
                 <input id="senhaInsirida" type="text" placeholder="Senha">
-                <button onclick="loginTutor()">Entrar</button>
+                <button type="submit">Entrar como tutor</button>
             </form>
         </div>
         
@@ -66,8 +66,7 @@
 
 
     </div>
-    <script src="/js/main.js"></script>
-    <script src="/js/save.js"></script>
+    <script src="/js/tutor.js"></script>
     <script src="/js/scripts.js"></script>
     <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
 </body>

@@ -1,0 +1,247 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+}
+
+a{
+    color: inherit;
+    transition: 0.5s;
+}
+
+a:hover{
+    scale: 1.05;
+}
+
+.linha{
+    border-bottom: 2px solid #FF8346;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+/* --------------------Cabecario------------------------- */
+
+header{
+    background-color:#FF8346;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    height: 8vh;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    
+}
+
+header input{
+    padding: 10px 50px 10px 50px;
+    border-radius: 10px;
+}
+.cabecario{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.cabecario i{
+    font-size: 35px;
+}
+
+.logo{
+    height: 50px;
+}
+.icones_cabecario{
+    font-size: 30px;
+    display: flex;
+    gap: 20px;
+}
+/* -------------------- Fim Cabecario------------------------- */
+
+.dashboard{
+    background-color: #f5f4eb;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: auto;
+    height: auto;
+    font-size: 20px;
+}
+
+.dashboard-titulo{
+    display: flex;
+    align-items: center;
+    gap: 10PX;
+    padding: 10px;
+}
+
+.dashboard-lista li a{
+    padding: 10px 0px 10px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dashboard-perfil{
+    display: grid;
+    grid-template-columns: 35% 65%;
+    padding: 10px;
+    background-color: #FF8346;
+    border-radius: 40px;
+}
+
+.dashboard-perfil img{
+    width: 100px;
+    border-radius: 1000px;
+    height: 100px;
+}
+
+.dashboard-perfil-seila{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+    overflow-wrap: break-word; /* Alternativa mais moderna */
+}
+
+
+/* Tela Principal !!!!!!!!!!!! */
+.telaPrincipal{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+/* Primeiro Quadrante */
+
+.MiniPerfil{
+    border: 10px, solid, white;
+    border-radius: 20px;
+    background-color: #f5f4eb;
+    display: flex;
+    flex-direction: column;
+}
+
+.apresentacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 0px 10px 0px;
+}
+
+.apresentacao img{
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+}
+
+.dadosGerais{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    
+}
+
+.avaliacao{
+    padding: 10px;
+
+}
+
+.avaliacao p{
+    color: #f5f4eb;
+    background-color: #FF8346;
+    width: 50px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 10px;  
+}
+
+.disponibilidade{
+    padding: 10px;
+}
+
+/* Segundo Quadrante ----------------- */
+
+.trabalhos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #f5f4eb;
+    padding: 30px;
+    border: 5px, solid, white;
+    border-radius: 30px;
+}
+
+.trabalhos h2{
+    padding-bottom: 10px;
+}
+
+.trabalhos_container{
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    padding: 10px;
+    background-color: #FF8346;
+    border-radius: 20px;
+  
+    
+}
+.trabalhos_container img{
+    height: 30px;
+}
+
+.calendario{
+    padding: 0px 10vh 0px 10vh;
+    background-color: #f5f4eb;
+    border: 10px solid white;
+    border-radius: 30px;
+}
+
+.calendario img{
+    height: 230px;
+}
+
+
+/* ---------------Inicio Terceiro quadrante------------  */
+
+.procurar{
+    
+    gap: 10px;
+    background-color: #f5f4eb;
+    padding: 30px;
+    border: 5px, solid, white;
+    border-radius: 30px;
+}
+.procurar h2{
+    padding: 10px;
+}
+
+.naoSei{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.categorias{
+    display: flex;
+    flex-direction: column;
+    background-color: #FF8346;
+    border: 10px solid #f5f4eb;
+    align-items: center ;
+    border: 10px solid #f5f4eb;
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
+li img{
+    height: 50px;
+}
+
+.propaganda{
+    height: 300px;
+    align-items: center;
+}

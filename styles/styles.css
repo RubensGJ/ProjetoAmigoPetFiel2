@@ -1,4 +1,4 @@
-
+/* -------------------Classes universais---------------------- */
 html {
     scroll-behavior: smooth;
 }
@@ -7,7 +7,7 @@ html {
     font-family: "Titan One", sans-serif;
     font-style: normal;
 }
-  
+
 :root {
     --fonte1: "Titan One";
     --cor1: #FF8346;
@@ -26,7 +26,7 @@ a {
     text-decoration: none; 
     transition: 0.5s;
 }
-  
+
 a:visited {
     color: inherit; 
 }
@@ -36,8 +36,26 @@ a:hover{
     color:var(--cor2);
     scale: 1.05;
 }
-  
-header {
+
+a:-webkit-any-link {
+    color: inherit;
+}
+
+.botao {
+    background-color: var(--cor1);
+    padding: 20px 45px;
+    font-family: var(--fonte1);
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    margin: 0 0 5% 0 ;
+      
+}
+
+/* ---------------------Cabecario------------------- */
+
+
+
+.cabecario{
     background-color: var(--cor1);
     border-radius: 0px 0px 15px 15px;
     font-family: var(--fonte1);
@@ -51,10 +69,69 @@ header {
   
 .navbar {
     display: flex;
-    gap: 3.5vw;
+    gap: 25px;
     font-size: 25px;
 }
+
+/* ----------------------menu Mobile---------------------- */
+
+.menu_mobile{
+    display: none;
+    background-color: var(--cor1);
+    height: 150vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    width: 0%;
+    }
+    
+.navbar_mobile a{
+    font-size: 25px;
+    display: flex;
+    padding: 10% 5%;
+    font-family: var(--fonte1);
+    color: white;
+}
+
+.navbar_mobile a:hover{
+background-color: #FFD165;
+}
+
+.menu_mobile .btn-fechar i{
+    color: #FFD165;
+    font-size: 50px;
+}
+ 
+.menu_mobile .btn-fechar {
+    padding: 5%;
+}
+
+.btn_menu{
+    display: none;
+}
+
+.btn_menu i{
+    display: none;
+    font-size: 45px;
+    
+}
+
+.overlay_menu{
+    background-color: #000000a2;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9;
+    display: none;
+}
   
+
+
+/* -----------------------Pagina 1------------------ */
+
 .pagina1 {
     height:auto;
     display: grid;
@@ -103,21 +180,10 @@ header {
     background-repeat: no-repeat;
     background-position: center;
 }
-  
-.botao {
-    background-color: var(--cor1);
-    padding: 20px 45px;
-    font-family: var(--fonte1);
-    border-radius: 20px;
-    color: rgb(255, 255, 255);
-    margin: 0 0 5% 0 ;
-      
-}
-  
-  
-  
-  
-  
+
+
+/* -------------------Sessao 2----------------------------- */
+
   
 .pagina2 {
     display: grid;
@@ -153,92 +219,94 @@ header {
     font-size: 25px;
 }
   
-  .pagina2 img {
+.pagina2 img {
     border-radius: 30px 0 0 30px;
     height: auto;
     max-width: 100%;
-  }
+}
+  
+  
+/* ------------------Sessao 3-------------------------------------- */
   
   
   
-  
-  
-  
-  .pagina3 {
+.pagina3 {
     height: auto;
     background-color: white;
     display: grid;
     grid-template-columns: 50% 50%;
     align-items: center;
     padding: 60px 50px;
-  }
+}
   
-  .pagina3-texto {
+.pagina3-texto {
     font-family: var(--fonte1);
     color: var(--cor2);
     font-size: 23px;
     width: 90%;
     text-align: right;
     
-  }
+}
   
-  .pagina3-titulo {
+.pagina3-titulo {
     color: var(--cor3);
     font-weight: 400;
     padding-bottom: 5vh;
     font-size: 50px;
-  }
+}
   
-  .pagina3-img {
+.pagina3-img {
     width: 600px;
     max-width: 100%;
     border-radius: 10000px;
-  }
+}
+  
+/* -------------------Sessao 4 ------------------------ */
   
   
-  
-  
-  .pagina4{
+.pagina4{
     height:auto;
     background-color: var(--cor3);
     color: var(--cor1);
     font-family: var(--fonte1);
     padding: 3% 15%;
     font-weight: 400;
-  }
+}
   
-  .pagina4 img{
+.pagina4 img{
     height: 10rem;
     gap: 1rem;
     width: 10rem;
-  }
+}
   
-  .pagina4 h2{
+.pagina4 h2{
     text-align: center;
     font-size: 42px;
-   }
+}
    
-  .pagina4-lista{
+.pagina4-lista{
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
     
-  }
+}
   
-  .pagina4-lista h3{
+.pagina4-lista h3{
     font-size: 30px;
     padding: 0.5rem 0rem 0.5rem 0rem;
-  }
+}
   
-  .pagina4-lista p{
+.pagina4-lista p{
   font-size: 20px;
   width: 15rem;
   padding: 1rem 0rem 1rem 0rem;
-  }
+}
   
+
+/* ------------------------------ Sessao 4 ---------------------------- */
   
-  .contato{
+.contato{
     height: 80vh;
     background-image: url(/img/imagem7.jpg);
     background-size: cover;
@@ -247,17 +315,17 @@ header {
     justify-content: flex-end;
     align-items: flex-end;
     padding: 0px 0px 2rem 0px;
-  }
+}
    
-  .contato h2{
+.contato h2{
     font-family: var(--fonte1);
     color: white;
     font-size: 3rem;
-  }
+}
   
-  /*----------------------Codigo da pagina anterior----------------------------------*/
+/*----------------------Codigo da pagina anterior----------------------------------*/
   
-  .informacoes-contato {
+.informacoes-contato {
     background-color: white;
     padding: 30px;
     border-radius: 8px;
@@ -268,26 +336,26 @@ header {
     margin-right: 20px;
     margin-bottom: 20px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
+}
   
-  .info {
+.info {
     margin-bottom: 20px;
-  }
+}
   
-  .info h4 {
+.info h4 {
     margin-bottom: 10px;
     font-size: 18px;
-  }
+}
   
-  .info p {
+.info p {
     color: #333;
     font-size: 16px;
-  }
+}
 
 
-
+/* -------------------Rodape-------------- */
   
-  .rodape {
+.rodape {
     background: #FF8346;
     color: #fff;
     text-align: center;
@@ -296,28 +364,28 @@ header {
     flex-wrap: wrap;
     height: auto;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
+}
   
-  .coluna {
+.coluna {
     margin: 10px;
     flex: 1;
     min-width: 150px;
     overflow: hidden;
-  }
+}
   
-  .coluna ul {
+.coluna ul {
     list-style: none;
     padding: 0;
-  }
+}
   
-  .coluna ul li {
+.coluna ul li {
     margin: 5px 0;
-  }
+}
   
-  .coluna a {
+.coluna a {
     color: #ffffff;
     text-decoration: none;
-  }
+}
   
 .social-icons img {
     width: 20px;

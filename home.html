@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="/styles/home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="logo">Pet Amigo Fiel</div>
+        <div class="logo"><i class="bi bi-gitlab"></i>Pet Amigo Fiel</div>
         <nav>
             <ul>
                 <li><a href="#encontrar">Encontrar Cuidador</a></li>
@@ -21,7 +22,7 @@
             </ul>
         </nav>
         <div class="auth-buttons">
-            <a href="index.html" class="btn acessar-perfil"> Acessar Perfil</a>
+            <a href="index.html" class="botao-perfil"><i class="bi bi-person-circle"></i></a>
         </div>
     </header>
 
@@ -75,6 +76,16 @@
 
         <main class="results">
             <h2>Resultados da Busca</h2>
+            <div class="cuidador">
+                <img src="/img/rubens.png" alt="Nome do Cuidador" class="foto">
+                <div class="info">
+                    <h3>Rubens Gallina</h3>
+                    <p>1.0 km - Tijuca</p>
+                    <p>5.0 (5000)</p>
+                    <p>R$ 5600 p/ dia</p>
+                    <button class="btn detalhes">Ver Detalhes</button>
+                </div>
+            </div>
             <div class="cuidador">
                 <img src="/img/rubens.png" alt="Nome do Cuidador" class="foto">
                 <div class="info">

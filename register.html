@@ -13,10 +13,10 @@
         <!-- Contêiner que engloba ambos os formulários -->
         <div class="form-slider">
             <!-- Formulário de Cadastro de Tutor -->
-            <div id="normal-signup" class="form-container" onsubmit="return registroLoginTutor()">
-                <form id="signup-form">
+            <div id="normal-signup" class="form-container">
+                <form id="signup-form" onsubmit="registrarTutor(); return false;">
                     <h1>Seja bem-vindo, <br>pronto pra achar um cuidador?</h1>
-                    <input type="text" placeholder="Nome" required>
+                    <input id="nomeTutor" type="text" placeholder="Nome" required>
                     <input id="emailTutor" type="email" placeholder="Email" required>
                     <input id="senhaTutor" type="password" placeholder="Senha" required>
                     <input id="conSenhaTutor" type="password" placeholder="Confirme a Senha" required>
@@ -26,23 +26,23 @@
                         <label for="terms">Eu aceito os <a href="#">termos de contrato</a></label>
                     </div>
                     <button type="button" id="caregiver-btn">Quero me tornar um cuidador</button>
-                    <button type="submit">Cadastrar</button>
+                    <button type="submit">Cadastrar como tutor</button>
                 </form>
             </div>
 
             <!-- Formulário de Cadastro de Cuidador -->
             <div id="caregiver-signup" class="form-container">
-                <form id="caregiver-form">
+                <form id="caregiver-form" onsubmit="registrarCuidador(); return false;">
                     <h1>Seja bem-vindo, <br>pronto pra ser um cuidador?</h1>
-                    <input type="text" placeholder="Nome do Cuidador" required>
-                    <input type="email" placeholder="Email" required>
-                    <input type="password" placeholder="Senha" required>
-                    <input type="password" placeholder="Confirme a Senha" required>
+                    <input id="nomeCuidador" type="text" placeholder="Nome do Cuidador" required>
+                    <input id="emailCuidador" type="email" placeholder="Email" required>
+                    <input id="senhaCuidador" type="password" placeholder="Senha" required>
+                    <input id="conSenhaCuidador" type="password" placeholder="Confirme a Senha" required>
 
                     <!-- Campo de upload de arquivos -->
                     <div class="file-upload">
                         <label for="file-upload">Envie um documento ou foto:</label>
-                        <input type="file" id="file-upload" name="file-upload" accept="image/*,.pdf,.doc,.docx">
+                        <input type="file" id="imagemCuidador" accept="image/*">
                     </div>
 
                     <!-- Checkbox de Aceitar Termos -->
@@ -51,7 +51,7 @@
                         <label for="terms-caretaker">Eu aceito os <a href="#">termos de contrato</a></label>
                     </div>
 
-                    <button type="button" id="return-btn">Sou Tutor</button>
+                    <button type="button" id="return-btn">Quero me cadastrar como tutor</button>
                     <button type="submit">Cadastrar como Cuidador</button>
                 </form>
             </div>
@@ -62,9 +62,7 @@
     <div class="login-container">
         <a href="login.html"><button class="login-btn">Já tem login? Entre</button>
     </div>
-
-    <script src="/js/main.js"></script>
-    <script src="/js/save.js"></script>
+    <script src="/js/tutor.js"></script>
     <script src="/js/scripts.js"></script>
 </body>
 

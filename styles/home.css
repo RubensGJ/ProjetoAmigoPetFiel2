@@ -7,6 +7,20 @@ body {
     color: #5b5022;
 }
 
+a:visited{
+    color: inherit;
+}
+
+.botao-perfil {
+    font-size: 40px;
+    padding-right: 40px ;
+}
+
+
+.logo{
+    display: flex;
+    gap: 20px;
+}
 
 header {
     display: flex;
@@ -34,7 +48,7 @@ header {
 }
 
 .auth-buttons .btn.acessar-perfil:hover {
-    background-color: #d62839; 
+    background-color: #d6c528; 
 }
 
 header .logo {
@@ -51,6 +65,7 @@ nav a {
     text-decoration: none;
     color: white;
     font-size: 18px;
+    transition: 0.5s;
 }
 
 .auth-buttons .btn {
@@ -111,4 +126,106 @@ footer {
     text-align: center;
     padding: 10px;
     background-color: #ffffff;
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 0;
+    }
+
+    .auth-buttons {
+        margin-top: 10px;
+    }
+    
+    .main-content {
+        flex-direction: column;
+        margin: 10px;
+    }
+    
+    .filters, .results {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .filters {
+        padding: 15px;
+    }
+    
+    .results {
+        padding: 15px;
+    }
+
+    .cuidador {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cuidador .foto {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header .logo {
+        font-size: 1.5rem;
+    }
+    
+    nav a {
+        font-size: 16px;
+    }
+
+    .main-content {
+        margin: 5px;
+    }
+
+    .filters, .results {
+        padding: 10px;
+    }
+
+    .filters h3, .filter-item h4 {
+        font-size: 16px;
+    }
+
+    .results h2 {
+        font-size: 18px;
+    }
+    
+    .cuidador .info {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cuidador {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cuidador .info {
+        text-align: left;
+    }
+
+    .auth-buttons .botao-perfil {
+        font-size: 30px;
+        padding-right: 20px;
+    }
+    
+    .filters, .results {
+        padding: 5px;
+    }
+    
+    .filters h3, .filter-item h4 {
+        font-size: 14px;
+    }
+
+    .results h2 {
+        font-size: 16px;
+    }
 }

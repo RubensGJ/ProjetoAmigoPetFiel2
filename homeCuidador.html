@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/styles/homeCuidador.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="cabecario">
+            <img src="img/petsIcone.png" class="logo">
+            <h1>Pet Amigo Fiel</h1>
+            <input type="text" placeholder="Pesquise aqui">
+        </div>
+
+        <div class="icones_cabecario">
+            <i class="bi bi-bell-fill"></i>
+            <i class="bi bi-person-circle"></i>
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="dashboard">
+
+            <div class="linha">
+                <a href="#" class="dashboard-titulo"><i class="bi bi-chat-left"></i><h2>Dashboard</h2></a>
+            </div>
+            
+            <ul class="dashboard-lista">
+                <li>
+                   <a href="#"> <i class="bi bi-collection"></i> <p>Trabalhos futuros</p> </a>     
+                </li>
+                <li>
+                    <a href="#"><i class="bi bi-arrow-left-right"></i> <p>FeedBack</p> </a>
+                </li>
+                <li>
+                    <a href="#"><i class="bi bi-check-circle-fill"></i> <p>Perfil</p> </a>
+                </li>
+                <li>
+                    <a href="#"><i class="bi bi-person-workspace"></i> <p>Mensagens</p> </a>
+                </li>
+                <li>
+                    <a href="#"><i class="bi bi-gear"></i> <p>Configurações</p> </a>
+                </li>
+                
+            </ul>
+
+
+            <div class="dashboard-perfil">
+                <img id="imagemPerfilDashboard" alt="Preview da imagem carregada">
+
+                <div class="dashboard-perfil-seila">
+                    <p id="nomeUsuario"></p>
+                    <h3 id="emailUsuario"></h3>
+                </div>
+
+                
+
+            </div>
+            <a href="./index.html" class="dashboard-titulo"><i class="bi bi-box-arrow-right"></i><h2>Log out</h2></a>
+
+        </div>
+
+
+        <!-- SESSAO DA tela Principal -->
+        <section class="telaPrincipal">
+
+            <!-- Quadrado esquerdo -->
+            <div  class="MiniPerfil">
+                <div class="apresentacao">
+                    <img id="imagemPerfilMini" alt="Preview da imagem carregada">
+                    <h2>Bem vindo, <span id="NomePerfilMini"></span>!</h2>
+                    <p>Idade, Genero</p> 
+                </div>
+
+                <div class="dadosGerais">
+                    <h3>Informações Geral</h3>
+                    <p>Experiencia: 2 Anos </p>
+                    <p>Serviços Oferecidos: PettSitter, Passeio, Banho.</p>   
+                </div>
+
+                <div class="avaliacao">
+                    <H4>Avaliaçãoes recente</H4>
+                    <p>5.0</p>
+                    <p>5.0</p> 
+                    <p>5.0</p>
+                </div>
+
+                <div class="disponibilidade">
+                    <h4>Disponivel</h4>
+                    <p>Estou Disponivel</p>
+                    <p>Não planjo sair de férias tão cedo</p>
+                </div>
+            </div>
+             
+            
+         <!-- Quadrante meio -->
+            <div>
+                <div class="trabalhos">
+
+                    <h2>Trabalhos futuros</h2>
+
+                    <div class="trabalhos_container">
+                        <img src="img/iconedog.png"> <p>Passeio com Bob</p> <p>Dez 20</p>
+                    </div>
+
+                    <div class="trabalhos_container">
+                        <img src="img/iconecat.png"> <p>Pernoite com Mel</p> <p>Dez 23</p>
+                    </div>
+
+
+                </div>
+
+                <div class="trabalhos">
+                    <h3>Meu clientes</h3>
+                    <div class="trabalhos_container">
+                        <img src="img/iconedog.png"> <p>Passeio com Willian </p> <p>Hoje</p>
+                    </div>
+                    <a class="trabalhos_container">Adicionar novo cliente</a>
+                </div>
+
+                <div class="calendario">
+                    <img src="img/calendario.png">
+                </div>
+                
+            </div>
+
+            <!-- Terceiro Quadrante -->
+            <div class="procurar"
+            
+            >
+                <H2>Ache trabalhos</H2>
+                <ul class="naoSei">
+
+                    <a href="#"><li class="categorias">
+                        <img src="img/petsIcone.png">
+                        <p>Geral</p>
+                    </li></a>
+
+                    <a href="#"><li class="categorias">
+                        <img src="img/iconeCachorroInt.png">
+                        <p>Noite</p>
+                    </li></a>
+
+                    <a href="#"><li class="categorias">
+                        <img src="img/iconeGatoInt.png">
+                        <p>PerDia</p>
+                    </li></a>
+
+                    <a href="#"><li class="categorias">
+                        <img src="img/iconeCanil.png">
+                        <p>Diaria</p>
+                    </li></a>
+
+                    <a href="#"><li class="categorias">
+                        <img src="img/iconeColeira.png">
+                        <p>Passeio</p>
+                    </li></a>
+
+                    <a href="#"><li class="categorias">
+                        <img src="img/iconeRacao.png">
+                        <p>Diverso</p>
+                    </li></a>
+                </ul>
+
+                <h2>Publicidade</h2>
+                <img class="propaganda" src="img/propaganda.png">
+
+
+            </div>
+        </section>  
+
+    </main>
+
+    
+    
+</body>
+</html>
+<script src="/js/tutor.js"></script>
